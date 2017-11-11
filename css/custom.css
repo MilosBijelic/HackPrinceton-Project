@@ -1,11 +1,13 @@
 h1, h2, h3, h4, h5, h6 {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Verdana, sans-serif;
 	color: white;
+	font-variant: small-caps;
 }
 
 body {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Verdana, sans-serif;
 	color: white;
+	font-variant: small-caps;
 }
 
 input[type="text"], textarea {
@@ -15,5 +17,52 @@ border:0px solid #ccc !important;
 }
 
 body {
-  background-color: #B1CCA8;
+  background-color: #E8D6CB;
+}
+
+
+.btn-danger {
+  background-color: #A3A380;
+  border-color: #A3A380;
+}
+
+.btn-danger:hover {
+  background-color: #A3A380;
+  border-color: #A3A380;
+}
+
+.btn-danger.disabled, .btn-danger:disabled {
+  background-color: #A3A380;
+  border-color: #A3A380;
+}
+
+
+.btn-danger:focus, .btn-danger.focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-danger:not([disabled]):not(.disabled):active, .btn-danger:not([disabled]):not(.disabled).active,
+.show > .btn-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #A3A380;
+  border-color: #A3A380;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+
+.btn-primary {
+  background-color: #B97375;
+  border-color: #B97375;
+  }
+
+.btn-primary:hover {
+  background-color: #B97375;
+  background-color: #B97375;
+}
+
+.btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #B97375;
+  border-color: #005cbf;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
