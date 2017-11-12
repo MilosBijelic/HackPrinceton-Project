@@ -2,18 +2,34 @@
 <html lang="en">
 
 <head>
-  <title>habitsPage</title>
+  <title>WelcomePage</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    section {
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -60%) }
+  </style>
 </head>
 
 <body>
+
+<div style="background:transparent !important" class="jumbotron  text-center">
+  <img src="hackPrincetonLogos/mindFRAME.png" height="80"> 
+</div>
+
+<section>
   <div style="background:transparent !important" class="jumbotron text-center">
-      <h3>To get started, please identify the habits that are relevant to you</h3>
+      <h3>To get started, please identify the habits that are relevant to you:</h3>
     <div class="form-group has-success">
     <div class="col-sm-1">
   </div>
@@ -95,8 +111,8 @@
 
     <input type="submit" class="btn btn-primary" name="habitSubmit" value="Submit" onclick = "location.href='userProfile.html'"/>
 
-  <?php include 'habitListCheckBox.php';?>
+  <!?php include 'habitListCheckBox.php';?>
 </form>
-
+</section>
   </body>
 </html>
