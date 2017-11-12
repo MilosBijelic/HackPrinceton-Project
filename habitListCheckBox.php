@@ -6,9 +6,17 @@ mysqli_select_db($link,"habitMoodFuckingInfo");
 if(isset($_POST['habitSubmit'])){
 if(!empty($_POST['habitList'])) {
 	// Counting number of checked checkboxes.
-	$checked_count = count($_POST['habitList']);
+//	$checked_count = count($_POST['habitList']);
 
-
+	//grabs only the selected ones (negating the need to count or iterate over all habits
+	$("input[name='habitList[]']:checked")
+	var values = new Array();
+	$.each($("input[name='habitList[]']:checked"), function() {
+		values.push($(this).val()); 
+	
+		//NEXT STEP: push this list to the php mySQL database --> table 
+		
+		
 	$study = $_POST['habitList'][0]; // for study
 	$work = $_POST['habitList'][1];
 	$coffee = $_POST['habitList'][2];
