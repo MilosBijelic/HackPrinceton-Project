@@ -23,12 +23,13 @@ body {
 
 .btn-danger {
   background-color: #A3A380;
-  border-color: #A3A380;
+  border: 3px solid #A3A380;
 }
 
 .btn-danger:hover {
-  background-color: #A3A380;
-  border-color: #A3A380;
+  background-color: #FFFFFF;
+  border: 3px solid #A3A380;
+  color: #A3A380;
 }
 
 .btn-danger.disabled, .btn-danger:disabled {
@@ -52,12 +53,13 @@ body {
 
 .btn-primary {
   background-color: #B97375;
-  border-color: #B97375;
+  border: 3px solid #B97375;
   }
 
 .btn-primary:hover {
-  background-color: #B97375;
-  background-color: #B97375;
+  background-color: #FFFFFF;
+  border: 3px solid #B97375;
+  color: #B97375;
 }
 
 .btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active,
