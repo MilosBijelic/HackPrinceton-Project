@@ -8,14 +8,37 @@ if(!empty($_POST['habitList'])) {
 	// Counting number of checked checkboxes.
 //	$checked_count = count($_POST['habitList']);
 
+	$totalFields = 0; // stores counter of values for for-loop
 	//grabs only the selected ones (negating the need to count or iterate over all habits
 	$("input[name='habitList[]']:checked")
 	var values = new Array();
 	$.each($("input[name='habitList[]']:checked"), function() {
 		values.push($(this).val()); 
+		$totalFields++;}
 	
 		//NEXT STEP: push this list to the php mySQL database --> table 
 		
+		// DATE = yyyy-mm-dd
+	$sql = "CREATE TABLE habitMoodFuckingTable( 
+	    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	    actualdate DATE NOT NULL, 
+	)";
+
+	if(mysqli_query($link, $sql)){
+	    echo "Table created successfully.";
+	} else{
+	    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+	}
+
+	$table  = 'habitMoodFuckingTable';
+	for($x = 0; $x < $totalFields; $x++) {
+	    $column = $values[$x]; // has to be the habit string
+	    mysql_query("ALTER TABLE $table ADD $column INT");
+	}
+	 
+	// Close connection
+	mysqli_close($link);
+
 		
 	$study = $_POST['habitList'][0]; // for study
 	$work = $_POST['habitList'][1];
