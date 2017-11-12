@@ -2,8 +2,6 @@
 # Description: a class to handle all of the data stroage for the website 
 # Creates the users csv and inputs all of the data from the website into their personal csv file
 
-# By Milos Bijelic 
-
 # Version: 0.1.0	-	Inital release: create csv and initalize the habits and mood 
 ##################################################
 

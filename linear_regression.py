@@ -4,8 +4,6 @@
 #              weights associated with each habit. This allows you to see how each 
 #              habit correlates to the persons mood. 
 #
-#              By: Milos Bijelic 
-#
 #              Version: 0.1.0	-	Initial release, prototype 
 ###########################################
 import numpy as np 
