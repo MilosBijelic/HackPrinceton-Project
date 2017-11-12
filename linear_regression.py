@@ -8,20 +8,35 @@
 ###########################################
 import numpy as np 
 import pandas as pd 
-import scipy.stats as stats
-import matplotlib.pyplot as plt 
-import sklearn 
-import csv 
-import pprint
-import sys
+# import scipy.stats as stats
+# import matplotlib.pyplot as plt 
+# import sklearn 
+# import csv 
+# import pprint
+# import sys
 
-def csv_dict_list(file):
-    reader = csv.DictReader(open('format_ex.csv', 'r'))
-    dict_list = []
+# Extracts the data from the CSV file and puts it into a useful form'[[]
 
-    for line in reader: 
-        dict_list.append(line)
-    return dict_list;
+features = ["Study", "Coffee", "Exercise", "Good Meal", "Shopping", "Date", "Movies", "Gaming", "Mood"]
 
-device_values = csv_dict_list(sys.argv[1])
-pprint.pprint(device_values)
+def get_feature_num(features):
+	size = len(features)
+	# print("Array is %d long" % size)
+	return size
+
+def create_data_frame(features, num_of_features):
+	data_frame = {}
+
+	data = np.readcsv("example_data_set.csv", delimiter=',')
+	data["Study"]
+	# while num_of_features > 0:
+	# 	i = 0
+	# 	habits = [[]] * get_feature_num(features)
+
+	# 	num_of_features= num_of_features - 1
+	# 	i += 1
+	# return data_frame
+
+if __name__ == '__main__':
+    get_feature_num(features)
+    create_data_frame(features, get_feature_num(features))
