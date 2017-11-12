@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-	<title>WelcomePage</title>
-	<meta charset="utf-8">
+  <title>WelcomePage</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
@@ -12,116 +12,104 @@
 </head>
 
 <body>
-	<div style="background:transparent !important" class="jumbotron text-center">
-  		<h3>To get started, please identify the habits that are relevant to you</h3>
-		<div class="form-group has-success">
-		<div class="col-sm-1">
-	</div>
-
-<fieldset class="form-group">
-
-<div class="container">
-    <div class="col col-lg-6">
-    <div class="form-check">
+  <div style="background:transparent !important" class="jumbotron text-center">
+      <h3>To get started, please identify the habits that are relevant to you</h3>
+    <div class="form-group has-success">
+    <div class="col-sm-1">
+  </div>
+<form action="php_checkbox.php" method="post">
+<div>
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="study">
         Study
       </label>
-      </div>
-   <div class="form-check">
+
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[] value="work">
         Work
       </label>
-      </div>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="coffee">
         Coffee
       </label>
-      </div>
-    <div class="form-check">
+
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="exercise">
         Exercise
       </label>
-      </div>
-    <div class="form-check">
+
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="fastfood">
         Fast Food
       </label>
-    </div>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="goodmeal">
         Good Meal
       </label>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="cleaning">
         Cleaning
       </label>
-      </div>
-    <div class="form-check">
+</div>
+<div>
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="shopping">
         Shopping
       </label>
-  </div>
-  <div class="col col-lg-6">
-    <div class="form-check">
+
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="date">
         Date
       </label>
-      </div>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="friends">
         Friends
       </label>
-      </div>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="nap">
         Nap
       </label>
-      </div>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="party">
         Party
       </label>
-      </div>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="movies">
         Movies
       </label>
-      </div>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="reading">
         Reading
       </label>
-      </div>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="gaming">
         Gaming
       </label>
-      </div>
-    <div class="form-check">
+
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input">
+        <input type="checkbox" class="form-check-input" name="habitList[]" value="travel">
         Travel
       </label> 
-      </div>   
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
-  </div>
-</fieldset>
+    </div>
+
+    <input type="submit" class="btn btn-primary" name="habitSubmit" value="Submit"/>
+
+  <?php include 'habitListCheckBox.php';?>
+</form>
 
   </body>
 </html>
