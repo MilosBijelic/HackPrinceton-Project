@@ -17,7 +17,7 @@
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -60%) }
+        transform: translate(-50%, -40%) }
   </style>
 </head>
 
@@ -32,17 +32,18 @@
   <img src="hackPrincetonLogos/mindFRAME.png" height="80"> 
 </div>
 
+
 <section>
   <div style="background:transparent !important" class="jumbotron text-center">
-      <h3>To get started, please identify the habits that are relevant to you:</h3>
-    <div class="form-group has-success">
-    <div class="col-sm-1">
+      <h3>Please identify the habits that are relevant to you:</h3>
+    <div class="col-sm-0">
   </div>
 
 <!form action="habitListCheckBox.php" method="post">
 <form>
 
-      <div>
+
+      <div class="row">
 
       <label class="form-check-label">
         <input type="checkbox" class="form-check-input" name="habitList[]" id="habitList" value="study">
@@ -60,6 +61,10 @@
         <input type="checkbox" class="form-check-input" name="habitList[]" id="habitList" value="exercise">
         Exercise </label>
 
+      </div>
+
+
+      <div class="row">
       <label class="form-check-label">
         <input type="checkbox" class="form-check-input" name="habitList[]" id="habitList" value="fastfood">
         Fast Food </label>
@@ -72,14 +77,13 @@
         <input type="checkbox" class="form-check-input" name="habitList[]" id="habitList" value="cleaning">
         Cleaning </label>
 
-      </div>
-
-      <div>
-
       <label class="form-check-label">
         <input type="checkbox" class="form-check-input" name="habitList[]" id="habitList" value="shopping">
         Shopping </label>
 
+      </div>
+
+      <div class="row">
 
       <label class="form-check-label">
         <input type="checkbox" class="form-check-input" name="habitList[]" id="habitList" value="date">
@@ -97,6 +101,10 @@
         <input type="checkbox" class="form-check-input" name="habitList[]" id="habitList" value="party">
         Party </label>
 
+      </div>
+
+      <div class="row">
+
       <label class="form-check-label">
         <input type="checkbox" class="form-check-input" name="habitList[]" id="habitList" value="movies">
         Movies </label>
@@ -113,7 +121,8 @@
         <input type="checkbox" class="form-check-input" name="habitList[]" id="habitList" value="travel">
         Travel </label> 
 
-    </div>
+      </div>
+
 
     <!input type="submit" class="btn btn-primary" name="habitSubmit" value="Submit" onclick = "location.href='userProfile.html'"/>
     <p><a style="position:relative;" class="btn btn-primary btn-lg" href="userProfile.html">Submit</a></p>
