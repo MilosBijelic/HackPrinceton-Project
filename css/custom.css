@@ -1,14 +1,14 @@
 h1, h2, h3, h4, h5, h6 {
 	font-family: Verdana, sans-serif;
 	color: white;
-	font-variant: small-caps;
 }
 
 body {
 	font-family: Verdana, sans-serif;
 	color: white;
-	font-variant: small-caps;
+  font-size: 9pt;
 }
+
 
 input[type="text"], textarea {
 outline: none;
@@ -24,6 +24,7 @@ body {
 .btn-danger {
   background-color: #A3A380;
   border: 3px solid #A3A380;
+  font-size: 10pt;
 }
 
 .btn-danger:hover {
@@ -54,6 +55,7 @@ body {
 .btn-primary {
   background-color: #B97375;
   border: 3px solid #B97375;
+  font-size: 10pt;
   }
 
 .btn-primary:hover {
