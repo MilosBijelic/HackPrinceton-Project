@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>UserProfile</title>
+  <! setup>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!this function allows us to center text at the center of the page>
+  <style>
+    section {
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+  </style>
+<script type="text/javascript">
+<!-- hide from old browsers
+
+function getValue(varname)
+{
+  // First, we load the URL into a variable
+  var url = window.location.href;
+
+  // Next, split the url by the ?
+  var qparts = url.split("?");
+
+  // Check that there is a querystring, return "" if not
+  if (qparts.length == 0)
+  {
+    return "";
+  }
+
+  // Then find the querystring, everything after the ?
+  var query = qparts[1];
+
+  // Split the query string into variables (separates by &s)
+  var vars = query.split("&");
+
+  // Initialize the value with "" as default
+  var value = "";
+
+  // Iterate through vars, checking each one for varname
+  for (i=0;i<vars.length;i++)
+  {
+    // Split the variable by =, which splits name and value
+    var parts = vars[i].split("=");
+    
+    // Check if the correct variable
+    if (parts[0] == varname)
+    {
+      // Load value into variable
+      value = parts[1];
+
+      // End the loop
+      break;
+    }
+  }
+  
+  // Convert escape code
+  value = unescape(value);
+
+  // Convert "+"s to " "s
+  value.replace(/\+/g," ");
+
+  // Return the value
+  return value;
+}
+
+// end hide -->
+</script>  
+
+<body>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active">Profile</li>
+  <li class="breadcrumb-item"><a href="#">Logs</a></li>
+  <li class="breadcrumb-item"><a href="#">About Us</a></li>
+</ol>
+  <section>
+	<div style="background:transparent !important" class="jumbotron  text-center">
+		<h3 class="display-3">Hello, 
+				<script type="text/javascript">
+				<!-- hide
+				var name = getValue("name");
+				document.write(name);
+				// end hide -->
+				</script>
+		</h3><br>
+		<strong> <h3 class="display-3" id="date"></h3><br></strong>
+			<script>
+	var d = new Date();
+	var m = d.getMonth()+1;
+	var y = d.getFullYear();
+	var w = d.getDate();
+	document.getElementById("date").innerHTML = w + "/" + m + "/" +y;
+	</script>
+		<h1 class="display-3"> How was your day?</h1>
+		<form name="theform2" action="didyouPage.html" method="get">
+			<div class="btn-group" data-toggle="buttons">
+				  <label class="btn btn-primary">
+					<input type="radio" name="ratings" value="1" checked=""> Bad
+				  </label>
+				  <label class="btn btn-primary">
+					<input type="radio" name="ratings" value="2"> 2
+				  </label>
+				  <label class="btn btn-primary">
+					<input type="radio" name="ratings" value="3"> Decent
+				  </label>
+				  <label class="btn btn-primary">
+					<input type="radio" name="ratings" value="4"> 4
+				  </label>
+				  <label class="btn btn-primary">
+					<input type="radio" name="ratings" value="5"> Great
+				  </label>
+			</div>
+		</form>
+	</div>
+  </section>
+</body>
+</html>
