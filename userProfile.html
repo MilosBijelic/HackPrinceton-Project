@@ -21,7 +21,7 @@
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -50%) }
+        transform: translate(-50%, -40%) }
   </style>
 <script type="text/javascript">
 <!-- hide from old browsers
@@ -85,6 +85,11 @@ function getValue(varname)
   <li class="breadcrumb-item"><a href="#">Logs</a></li>
   <li class="breadcrumb-item"><a href="aboutUs.html">About Us</a></li>
 </ol>
+
+<div style="background:transparent !important" class="jumbotron  text-center">
+  <img src="hackPrincetonLogos/mindFRAME.png" height="80"> 
+</div>
+
   <section>
 	<div style="background:transparent !important" class="jumbotron  text-center">
 		<h3 class="display-3">Hello, 
@@ -103,22 +108,22 @@ function getValue(varname)
 	var w = d.getDate();
 	document.getElementById("date").innerHTML = w + "/" + m + "/" +y;
 	</script>
-		<h1 class="display-3"> How was your day?</h1>
+		<h2 class="display-3"> How was your day?</h2>
 		<form name="theform2" action="didyouPage.html" method="get">
 			<div class="btn-group">
-				  <label class="btn btn-primary">
+				  <label class="btn btn-danger">
 					<input type="radio" id="rating1" name="ratings" value="1" checked="" onclick = "location.href='didyouPage.html'"> Bad
 				  </label>
-				  <label class="btn btn-primary">
+				  <label class="btn btn-danger">
 					<input type="radio" id="rating2" name="ratings" value="2" onclick = "location.href='didyouPage.html'"> 2
 				  </label>
-				  <label class="btn btn-primary">
+				  <label class="btn btn-danger">
 					<input type="radio" id="rating3" name="ratings" value="3" onclick = "location.href='didyouPage.html'"> Decent
 				  </label>
-				  <label class="btn btn-primary">
+				  <label class="btn btn-danger">
 					<input type="radio" id="rating4" name="ratings" value="4" onclick = "location.href='didyouPage.html'"> 4
 				  </label>
-				  <label class="btn btn-primary">
+				  <label class="btn btn-danger">
 					<input type="radio" id="rating5" name="ratings" value="5" onclick = "location.href='didyouPage.html'"> Great
 				  </label>
 			</div>

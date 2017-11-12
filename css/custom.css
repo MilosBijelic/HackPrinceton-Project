@@ -70,3 +70,15 @@ body {
   border-color: #005cbf;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
+
+.breadcrumb {
+  background-color: #B97375;
+  }
+
+  .breadcrumb li a {
+    color: white;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
